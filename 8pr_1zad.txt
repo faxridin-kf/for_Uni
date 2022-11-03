@@ -1,0 +1,19 @@
+#include <iostream>
+#include <list>
+#include <iterator>
+#include <algorithm>
+using namespace std;
+int main() 
+{
+    cout<< "Подготовил Кучкаров Фахриддин группы 618-21"<<endl;
+    cout<< "На тему: Написать функцию, которая по произвольному указателю на один из элементов двусвязного списка подсчитывает количество элементов в этом спискe"
+<<endl;
+// создается двусвязный список
+list<double> L1{9,8,7,6,5,4,3,2,1,0};
+  auto L2 = L1;
+//   сортирует массив
+  L2.sort();
+//   происходить слияние массива
+  copy(L2.begin(), L2.end(), ostream_iterator<double>{cout, " "});
+}
+   
